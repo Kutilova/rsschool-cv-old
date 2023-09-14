@@ -1,0 +1,318 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'Pompiere', sans-serif;
+    
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 25px;   
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-images {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.header__about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 35px;
+    width: 430px;
+    
+
+    
+}
+.header__title {
+    margin: 40px 0 0 75px;
+    
+}
+.header__about-me {
+    font-family: 'Josefin Sans';
+    font-size: 35px;
+    
+}
+.header__about-text {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+.contacts__list {
+    display: flex;
+    flex-direction: row;
+    
+
+    
+    
+}
+.contacts__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none; 
+    width: 135px;
+}
+.contacts__text {
+
+}
+
+.contacts__text:hover {
+    transform: scale(1.1);
+}
+
+.contacts__text--mobile {
+    font-size: 13px;
+}
+.header__icons {
+    text-align: center;
+    width: 20px;
+}
+
+.header__icons:hover {
+    transform: scale(1.1);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 50px;
+
+}
+.main__about {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main__about-title {
+    width: 150px;
+}
+
+.line--right::after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid rgb(72, 72, 72);
+    height: 380px;
+    margin-top: -10px;
+    margin-left: -20px;
+    padding: 0;
+}
+.main__about-text {
+    width: 350px;
+}
+.main__skills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.main__skills-text {
+    width: 150px;
+}
+.main__skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+
+
+}
+
+.main__skills-item {
+
+    width: 350px;
+    list-style-type: none;
+}
+
+.skills-text {
+    margin-bottom: 10px;
+}
+
+.skills-procent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+/* .skills-procent::after {
+    content: "";
+    border-radius: 50%;
+    border: 10px inset lightblue;
+    width: 40px;
+    height: 40px;    
+} */
+
+.skills-procent--html {
+
+  
+}
+.skills-procent--css {
+
+}
+.skills-procent--js {
+
+}
+.skills-procent--figma {
+
+}
+
+.line { 
+}
+
+.line-html {
+
+}
+.line-css { 
+
+}
+.line-js {
+
+}
+.line-figma {
+
+}
+.main__education {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    
+}
+.main__education-text {
+    width: 150px;
+
+}
+.main__education-list {    
+    
+}
+.main__about-title,
+.main__skills-text,
+.main__education-text,
+.main__example-text{
+    display: inline-block;
+}
+
+.main__about-title::after,
+.main__skills-text::after,
+.main__education-text::after,
+.main__example-text::after {
+    content: "";
+    left:calc(50% - 23px);
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: rgb(45, 45, 45);
+    transition:  0.5s ease-in-out; 
+    
+}
+.main__about-title:hover:after,
+.main__skills-text:hover:after,
+.main__education-text:hover:after,
+.main__example-text:hover:after {
+    width: 87%;
+}
+
+.main__education-item {
+    width: 350px;
+    list-style-type: none;
+}
+.main__example {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 130px;
+}
+.main__example-text {
+    width: 150px;
+    z-index: 1;
+}
+.main__example-code {
+    display: flex;
+    justify-content: start;
+    width: 350px;
+}
+.example-code {
+    position: absolute;
+    margin-left: -200px;
+    z-index: -1;
+}
+
+.code {
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #efe896;
+
+
+}
+
+
+
+.footer__logo {
+}
+
+.logo__github {    
+    height: 50px;
+    margin-left: 20px;
+
+}
+.logo__rsschool {
+    height: 50px;
+    margin-left: 70px;
+
+}
+.logo__telegram {
+    height: 100px;
+    margin-left: 40px;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+.footer__list {
+}
+
+.footer__year {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
